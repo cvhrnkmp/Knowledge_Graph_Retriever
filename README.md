@@ -36,8 +36,6 @@ MONGODB_CLUSTER=your_mongo_host
 MONGODB_DATABASE=your_db_name
 ```
 
-> **Note**: Neo4j is optional; configure if using graph-based traversals.
-
 ---
 
 ## Running the API
