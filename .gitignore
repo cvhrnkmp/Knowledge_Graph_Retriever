@@ -3,6 +3,15 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# Poetry
+poetry.lock
+.poetry/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
 # C extensions
 *.so
 
@@ -172,3 +181,6 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+# Individuel files
+api_test.ipynb
