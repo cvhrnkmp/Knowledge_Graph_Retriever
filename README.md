@@ -1,4 +1,4 @@
-# Knowledge Graph Retriever API
+# Knowledge Graph Retriever
 
 A flexible FastAPI service to query and explore knowledge graphs using multi-step retrieval and LLM-powered reasoning. Users can dynamically choose chat and embedding models, as well as retrieval strategies (e.g., vector search, BM25, HyDE, graph traversal) on each request.
 
