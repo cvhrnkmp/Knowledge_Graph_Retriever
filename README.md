@@ -58,10 +58,7 @@ Send a `POST` request to `/search` with a JSON body:
 
 ```json
 {
-  "global_query": "What causes community drift in social networks?",
-  "chat_model": "qwen3:14b",
-  "embeddings_model": "jina/jina-embeddings-v2-base-de",
-  "dataset": "<your-dataset>",
+  "global_query": "What causes community drift in social networks?"
 }
 ```
 
@@ -109,9 +106,7 @@ import json
 
 url = "http://localhost:8000/search"
 payload = {
-    "global_query": "What are the main components of a nuclear reactor?",
-    "dataset": "nuclear_engineering",
-
+    "global_query": "What are the main components of a nuclear reactor?"
 }
 
 response = requests.post(url, json=payload)
