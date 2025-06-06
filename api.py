@@ -18,15 +18,16 @@ searcher.init_search(
     "vector",
     "vector"
 )
+class SearchResponse(BaseModel):
+    global_answer: str
 class SearchRequest(BaseModel):
-    global_query: str
-    
+    global_query: str   
 
 
-@app.post("/search", response_model=SearchRequest)
+@app.post("/search", response_model=SearchResponse)
 async def search(req: SearchRequest):
     try:
         result = await searcher.search(req.global_query)
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
-    return result
+    return {"global_answer": result["response"]}

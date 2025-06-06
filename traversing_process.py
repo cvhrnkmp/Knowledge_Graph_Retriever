@@ -210,8 +210,8 @@ class DRIFTSearch():
         df_relation = pd.DataFrame(documents_relation)
         df_communities = pd.DataFrame(documents_communities)
         
-        df_entities = df_entities[(df_entities["model"] == model) & (df_entities["dataset"] == dataset)]
-        df_relation = df_relation[(df_relation["model"] == model) & (df_relation["dataset"] == dataset)]
+        df_entities = df_entities[df_entities["dataset"] == dataset]
+        df_relation = df_relation[df_relation["dataset"] == dataset]
         #df_communities = df_communities[(df_communities["model"] == model) & (df_communities["dataset"] == dataset)]
         # df_communities = df_communities[(df_communities["model"] == model) & (df_communities["dataset"] == dataset)]
         df_communities = df_communities[df_communities["dataset"] == dataset]
